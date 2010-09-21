@@ -1,0 +1,88 @@
+filetype on
+filetype plugin indent on
+
+set nocompatible
+
+set modelines=0
+
+" Tabs/spaces
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set sta
+
+" Basic options
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+
+let mapleader = ","
+
+" Searching
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+" Soft/hard wrapping
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
+" save when loosing focus
+au FocusLost * :wa
+
+" clean whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>ft Vatzf
+
+" select just pasted text
+nnoremap <leader>v V`]
+
+" edit .vimrc
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
+" faster escape
+inoremap jj <ESC>
+
+" sudo to write
+cmap w!! w !sudo tee % >/dev/null
+
+" Easy buffer navigation
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" call pathogen
+call pathogen#runtime_append_all_bundles()
+
+autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+set pastetoggle=<C-O>
+set cmdheight=2
+
+" Color scheme
+syntax on
+set background=dark
+colorscheme delek
