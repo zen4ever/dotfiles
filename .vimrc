@@ -86,3 +86,9 @@ set cmdheight=2
 syntax on
 set background=dark
 colorscheme delek
+
+if has('gui_running')
+    set guifont=Menlo:h12
+    colorscheme mustang
+    set background=dark
+endif
