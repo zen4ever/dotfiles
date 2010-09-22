@@ -101,6 +101,8 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 " pastetoggle
 nmap <leader>o :set paste!<BAR>:set paste?<CR>
 
+autocmd Filetype htmldjango source ~/.vim/ftplugin/html/sparkup.vim
+
 set cmdheight=2
 
 " Color scheme
@@ -112,4 +114,6 @@ if has('gui_running')
     set guifont=Menlo:h12
     colorscheme mustang
     set background=dark
+
+    let g:sparkupExecuteMapping = '<d-e>'
 endif
