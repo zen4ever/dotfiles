@@ -79,6 +79,16 @@ call pathogen#runtime_append_all_bundles()
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+
+" nginx filetype
+au BufRead,BufNewFile /etc/nginx/conf/* set ft=nginx
+au BufRead,BufNewFile /etc/nginx/sites-available/* set ft=nginx
+au BufRead,BufNewFile /usr/local/etc/nginx/sites-available/* set ft=nginx
+
+" NERD Tree
+map <leader>n :NERDTreeToggle<cr>
+let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
+
 set pastetoggle=<C-O>
 set cmdheight=2
 
