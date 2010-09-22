@@ -1,4 +1,4 @@
-filetype on
+filetype off
 filetype plugin indent on
 
 set nocompatible
