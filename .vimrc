@@ -88,6 +88,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " call pathogen
+call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
