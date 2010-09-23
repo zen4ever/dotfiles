@@ -21,19 +21,27 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set visualbell
 set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+
 
 " Backups
-set backupdir=~/.vim/tmp/backup// " backups
-set directory=~/.vim/tmp/swap//   " swap files
-set backup                        " enable backups
+set nobackup             " turn off backups
+set noswapfile           " turn off swapfiles
 
 let mapleader = ","
+
+" let's try remapping ; to :
+nnoremap ; :
 
 " Searching
 nnoremap / /\v
