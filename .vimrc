@@ -126,3 +126,5 @@ if has('gui_running')
 
     let g:sparkupExecuteMapping = '<d-e>'
 endif
+
+let g:snips_author = 'Andrii Kurinnyi'
