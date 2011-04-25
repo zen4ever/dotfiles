@@ -1,0 +1,31 @@
+[user]
+    name = Andrii Kurinnyi
+    email = andrew@marpasoft.com
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[github]
+    user = zen4ever
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    interactive = auto
+    ui = true
+    pager = true
+[alias]
+    co = checkout
+    st = status -sb
+    w = whatchanged
+    # add all changed (but not new) files to stage (index)
+    au = add -u
+    # prune all tracking local branches that have been removed from remote
+    prune-all = !git remote | xargs -n 1 git remote prune
+    changes = log --oneline --reverse
+    info = config --list
+    staged = diff --cached
+    summary = log --oneline
+    tags = tag -n1 -l
+[core]
+    pager = less -FRSX
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
