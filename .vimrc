@@ -128,3 +128,4 @@ if has('gui_running')
 endif
 
 let g:snips_author = 'Andrii Kurinnyi'
+au Bufread,BufNewFile *.as set filetype=actionscript
