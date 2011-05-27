@@ -129,3 +129,4 @@ endif
 
 let g:snips_author = 'Andrii Kurinnyi'
 au Bufread,BufNewFile *.as set filetype=actionscript
+au BufNewFile,BufRead *.mxml set filetype=mxml
