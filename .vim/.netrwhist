@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/andrew/Downloads/Vending Machine Website/core/templates'
+let g:netrw_dirhist_2='/Users/andrew/Downloads/Vending Machine Website/push'
+let g:netrw_dirhist_3='/Users/andrew/development/marpasoft/marpasoft/settings'
+let g:netrw_dirhist_4='/Users/andrew/development/marpasoftsite/marpasoft'
+let g:netrw_dirhist_5='/Users/andrew/development/marpasoftsite/marpasoft/project'
+let g:netrw_dirhist_6='/Users/andrew/development/marpasoftsite/requirements'
+let g:netrw_dirhist_7='/Users/andrew/development/marpasoftsite/marpasoft/settings'
+let g:netrw_dirhist_8='/Users/andrew/vagrant/admanager/salt/roots'

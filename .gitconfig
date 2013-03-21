@@ -1,5 +1,5 @@
 [user]
-    name = Andrii Kurinnyi
+	name = Andrii Kurinnyi
     email = andrew@marpasoft.com
 [branch "master"]
     remote = origin
@@ -26,6 +26,12 @@
     staged = diff --cached
     summary = log --oneline
     tags = tag -n1 -l
+	dt = difftool
 [core]
     pager = less -FRSX
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	editor = /usr/bin/vi
+[diff]
+	tool = vimdiff
+[push]
+	default = matching

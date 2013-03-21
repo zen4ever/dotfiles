@@ -1,4 +1,3 @@
-filetype off
 filetype plugin indent on
 
 set nocompatible
@@ -37,6 +36,7 @@ set noerrorbells         " don't beep
 " Backups
 set nobackup             " turn off backups
 set noswapfile           " turn off swapfiles
+set nowritebackup
 
 let mapleader = ","
 
@@ -87,9 +87,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+filetype off
 " call pathogen
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+filetype plugin indent on
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
@@ -130,3 +132,7 @@ endif
 let g:snips_author = 'Andrii Kurinnyi'
 au Bufread,BufNewFile *.as set filetype=actionscript
 au BufNewFile,BufRead *.mxml set filetype=mxml
+
+let g:clang_snippets=1
+let g:clang_conceal_snippets=1
+let g:clang_user_options='-fblocks -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -miphoneos-version-min=4.3'
