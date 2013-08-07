@@ -136,3 +136,5 @@ au BufNewFile,BufRead *.mxml set filetype=mxml
 let g:clang_snippets=1
 let g:clang_conceal_snippets=1
 let g:clang_user_options='-fblocks -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -miphoneos-version-min=4.3'
+
+autocmd BufWritePost *.py call Flake8()

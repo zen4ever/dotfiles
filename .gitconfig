@@ -5,7 +5,7 @@
     remote = origin
     merge = refs/heads/master
 [github]
-    user = zen4ever
+	user = zen4ever
 [color]
     branch = auto
     diff = auto
