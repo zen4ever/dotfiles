@@ -99,6 +99,7 @@ autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
 " set tabswitch for sass and html files as 2
 autocmd FileType sass set sw=2
 autocmd BufRead *.html set sw=2
+autocmd FileType yaml set sw=2
 
 " nginx filetype
 au BufRead,BufNewFile /etc/nginx/conf/* set ft=nginx
