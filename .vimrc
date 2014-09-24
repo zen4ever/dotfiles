@@ -133,9 +133,19 @@ endif
 let g:snips_author = 'Andrii Kurinnyi'
 au Bufread,BufNewFile *.as set filetype=actionscript
 au BufNewFile,BufRead *.mxml set filetype=mxml
+au! BufRead,BufNewFile *.json set filetype=json
 
 let g:clang_snippets=1
 let g:clang_conceal_snippets=1
 let g:clang_user_options='-fblocks -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk -miphoneos-version-min=4.3'
 
 autocmd BufWritePost *.py call Flake8()
+
+augroup json_autocmd
+  autocmd!
+  autocmd FileType json set autoindent
+  autocmd FileType json set formatoptions=tcq2l
+  autocmd FileType json set textwidth=78 shiftwidth=2
+  autocmd FileType json set softtabstop=2 tabstop=8
+  autocmd FileType json set expandtab
+augroup END
