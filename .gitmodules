@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-json"]
 	path = .vim/bundle/vim-json
 	url = git@github.com:elzr/vim-json.git
+[submodule ".vim/bundle/vim-terraform"]
+	path = .vim/bundle/vim-terraform
+	url = git@github.com:markcornick/vim-terraform.git
