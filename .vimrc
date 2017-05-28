@@ -149,3 +149,5 @@ augroup json_autocmd
   autocmd FileType json set softtabstop=2 tabstop=8
   autocmd FileType json set expandtab
 augroup END
+
+let g:vim_markdown_folding_disabled = 1
