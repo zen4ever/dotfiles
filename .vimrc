@@ -1,3 +1,4 @@
+execute pathogen#infect()
 filetype plugin indent on
 
 set nocompatible
@@ -86,12 +87,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-filetype off
-" call pathogen
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``

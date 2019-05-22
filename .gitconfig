@@ -1,6 +1,6 @@
 [user]
-	name = Andrii Kurinnyi
-    email = andrew@marpasoft.com
+	name = Andrew Kurin
+    email = prigun@gmail.com 
 [branch "master"]
     remote = origin
     merge = refs/heads/master
