@@ -23,6 +23,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo groupadd docker || true
 sudo usermod -aG docker $USER
+newgrp docker
 
 # check the latest version at https://golang.org/dl/
 GO_VERSION=1.15.4
