@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get install -y tmux git
 
 # install docker
-if ! command -v docker; then
+if ! command -v docker &> /dev/null; then
     sudo apt-get install -y \
         apt-transport-https \
         ca-certificates \
@@ -27,7 +27,7 @@ if ! command -v docker; then
     newgrp docker || true
 fi
 
-if ! command -v go; then
+if ! command -v go &> /dev/null; then
     # check the latest version at https://golang.org/dl/
     GO_VERSION=1.15.4
     curl -O https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
