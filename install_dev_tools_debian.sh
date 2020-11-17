@@ -29,7 +29,7 @@ fi
 
 if ! command -v go &> /dev/null; then
     # check the latest version at https://golang.org/dl/
-    GO_VERSION=1.15.4
+    GO_VERSION=1.15.5
     curl -O https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz
     tar -xvf go${GO_VERSION}.linux-amd64.tar.gz
     rm -f go${GO_VERSION}.linux-amd64.tar.gz
