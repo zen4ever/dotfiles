@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/vim-terraform"]
 	path = .vim/bundle/vim-terraform
 	url = git@github.com:markcornick/vim-terraform.git
+[submodule ".vim/bundle/vim-caddyfile"]
+	path = .vim/bundle/vim-caddyfile
+	url = https://github.com/isobit/vim-caddyfile.git
