@@ -37,3 +37,5 @@
     textconv = "iconv -f utf-16 -t utf-8"
 [push]
 	default = matching
+[pull]
+	rebase = false
