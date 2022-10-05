@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/vim-toml"]
 	path = .vim/bundle/vim-toml
 	url = git@github.com:cespare/vim-toml.git
+[submodule ".vim/bundle/scss-syntax"]
+	path = .vim/bundle/scss-syntax
+	url = https://github.com/cakebaker/scss-syntax.vim
