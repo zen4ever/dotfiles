@@ -115,7 +115,7 @@ set cmdheight=2
 " Color scheme
 syntax on
 set background=dark
-colorscheme delek
+colorscheme slate
 
 if has('gui_running')
     set guifont=Menlo:h12
@@ -146,3 +146,4 @@ augroup json_autocmd
 augroup END
 
 let g:vim_markdown_folding_disabled = 1
+let g:copilot_node_command = '/opt/homebrew/opt/node@16/bin/node'
