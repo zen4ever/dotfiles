@@ -116,6 +116,9 @@ set cmdheight=2
 syntax on
 set background=dark
 colorscheme slate
+" solarized options
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 
 if has('gui_running')
     set guifont=Menlo:h12
@@ -125,7 +128,7 @@ if has('gui_running')
     let g:sparkupExecuteMapping = '<d-e>'
 endif
 
-let g:snips_author = 'Andrii Kurinnyi'
+let g:snips_author = 'Andrew Kurin'
 au Bufread,BufNewFile *.as set filetype=actionscript
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au! BufRead,BufNewFile *.json set filetype=json
