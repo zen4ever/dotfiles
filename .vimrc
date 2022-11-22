@@ -149,4 +149,5 @@ augroup json_autocmd
 augroup END
 
 let g:vim_markdown_folding_disabled = 1
-let g:copilot_node_command = '/opt/homebrew/opt/node@16/bin/node'
+let g:brew_prefix=system("brew --prefix | tr -d '\n'")
+let g:copilot_node_command = g:brew_prefix.'/opt/node@16/bin/node'
