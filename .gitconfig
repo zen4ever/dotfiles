@@ -1,11 +1,11 @@
 [user]
-	name = Andrew Kurin
+    name = Andrew Kurin
     email = prigun@gmail.com 
 [branch "master"]
     remote = origin
     merge = refs/heads/master
 [github]
-	user = zen4ever
+    user = zen4ever
 [color]
     branch = auto
     diff = auto
