@@ -1,6 +1,7 @@
 [user]
     name = Andrew Kurin
     email = prigun@gmail.com 
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAv+6bk+nKkOcZ6u5DxR0Fmz5jMzMh39ZSaMaGgV2LD6
 [branch "master"]
     remote = origin
     merge = refs/heads/master
@@ -41,3 +42,9 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+    gpgsign = true
