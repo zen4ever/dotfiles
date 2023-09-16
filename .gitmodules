@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/copilot.vim"]
 	path = .vim/bundle/copilot.vim
 	url = https://github.com/github/copilot.vim.git
+[submodule ".vim/vim-tmux-navigator"]
+	path = .vim/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
